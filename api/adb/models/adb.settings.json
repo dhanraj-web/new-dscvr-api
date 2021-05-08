@@ -1,0 +1,159 @@
+{
+  "kind": "collectionType",
+  "collectionName": "adbs",
+  "info": {
+    "name": "adb",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "projectName": {
+      "type": "string",
+      "unique": false
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "select",
+        "ido",
+        "whitelist",
+        "privateSale",
+        "publicSale",
+        "fairLaunch",
+        "stakingFarming",
+        "lgeEvent",
+        "ifo",
+        "nftDrop",
+        "airdrop"
+      ]
+    },
+    "projectType": {
+      "type": "enumeration",
+      "enum": [
+        "nativeExchangeCEX",
+        "nativeExchangeDEX",
+        "meme",
+        "deFi",
+        "oracles",
+        "nft",
+        "deflationary",
+        "launchPad",
+        "gaming",
+        "lending",
+        "wallets",
+        "insurance",
+        "rebase",
+        "algoStablecoinSelegniorage",
+        "governance"
+      ]
+    },
+    "blockchain": {
+      "type": "enumeration",
+      "enum": [
+        "select",
+        "etherium",
+        "binanceSmartChain",
+        "solana",
+        "cardono",
+        "stellar",
+        "casperLabs",
+        "tezos",
+        "hederaHashgraph",
+        "neo",
+        "layer2"
+      ]
+    },
+    "tokenType": {
+      "type": "string"
+    },
+    "date": {
+      "type": "string"
+    },
+    "time": {
+      "type": "string"
+    },
+    "summary": {
+      "type": "string"
+    },
+    "projectLogo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "hardcap": {
+      "type": "integer"
+    },
+    "maxsupply": {
+      "type": "integer"
+    },
+    "seedPrice": {
+      "type": "integer"
+    },
+    "privateSalePrice": {
+      "type": "integer"
+    },
+    "publicSalePrice": {
+      "type": "integer"
+    },
+    "listingPrice": {
+      "type": "integer"
+    },
+    "twitter": {
+      "type": "string"
+    },
+    "telegram": {
+      "type": "string"
+    },
+    "discord": {
+      "type": "string"
+    },
+    "website": {
+      "type": "string"
+    },
+    "whitepaper": {
+      "type": "string"
+    },
+    "github": {
+      "type": "string"
+    },
+    "tokenAddress": {
+      "type": "string",
+      "unique": true
+    },
+    "projectInvolvement": {
+      "type": "enumeration",
+      "enum": [
+        "select",
+        "foundercofounder",
+        "dev",
+        "teamMember",
+        "invester",
+        "communityMember",
+        "none"
+      ]
+    },
+    "yourRewardAddress": {
+      "type": "enumeration",
+      "enum": [
+        "select",
+        "eth",
+        "bnb"
+      ]
+    },
+    "yourAddress": {
+      "type": "string"
+    }
+  }
+}
